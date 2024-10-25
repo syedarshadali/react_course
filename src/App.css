@@ -1,0 +1,149 @@
+body
+{
+  padding: 20px;
+}
+
+/* Basic reset for margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Light background for contrast */
+}
+
+/* Navigation styles */
+nav {
+  background-color: #d6a110; /* Green background */
+  padding: 10px 20px; /* Padding around the nav */
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-around; /* Evenly space the items */
+}
+
+nav li {
+  margin: 0 15px; /* Margin between items */
+}
+
+nav a {
+  color: white; /* White text color */
+  text-decoration: none; /* Remove underline from links */
+  padding: 8px 16px; /* Padding around links */
+  border-radius: 5px; /* Rounded corners for links */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+  background-color: #4578a0; /* Darker green on hover */
+}
+
+/* ***************** Form CSS ************************************ */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px; /* Ensure space between input and error message */
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.checkbox-group label {
+  display: inline-flex; /* Ensure checkbox and text are inline */
+  align-items: center;  /* Vertically align the checkbox and text */
+}
+
+/************************* Cascading Dropdown CSS *************************/
+.cascading-dropdown-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.cascading-dropdown-container h3 {
+  text-align: center;
+  color: #333;
+}
+
+.cascading-dropdown-container div {
+  margin-bottom: 20px;
+}
+
+.cascading-dropdown-container label {
+  display: inline-block;
+  font-weight: bold;
+  color: #555;
+  margin-right: 10px;
+}
+
+.cascading-dropdown-container select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.cascading-dropdown-container p {
+  text-align: center;
+  background-color: #e0f7fa;
+  padding: 10px;
+  border: 1px solid #4caf50;
+  border-radius: 4px;
+  color: #4caf50;
+}

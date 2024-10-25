@@ -1,0 +1,40 @@
+.user-details-container {
+  padding: 20px;
+}
+
+.user-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.horizontal-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* Create 4 equal sections */
+  gap: 20px;
+}
+
+.user-info, .address-info, .geo-info, .company-info {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.user-info h2, .address-info h2, .geo-info h2, .company-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

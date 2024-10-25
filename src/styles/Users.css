@@ -1,0 +1,47 @@
+/* Users.css */
+
+.users-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.users-table th, .users-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.users-table th {
+  background-color: #4c7aaf;
+  color: white;
+  font-weight: bold;
+}
+
+.users-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.users-table tr:hover {
+  background-color: #ddd;
+}
+
+.users-table td {
+  color: #555;
+}
