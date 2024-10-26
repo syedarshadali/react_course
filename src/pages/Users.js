@@ -7,7 +7,6 @@ const Users = () => {
   return (
     <>
       <UsersList />
-      <Outlet />
     </>
   )
 }

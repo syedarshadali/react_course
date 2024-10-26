@@ -1,13 +1,16 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 
 import '../styles/UserDetails.css';
+import ThemeContext from '../contexts/ThemeContext';
 
 const UserDetails = () => {
 
   const {userId} = useParams(); // Access URL parameter
   const [user, setUser] = useState({});
+
+  const theme = useContext( ThemeContext );
 
   useEffect(()=> {
     (
@@ -35,7 +38,7 @@ const UserDetails = () => {
     <div className="user-details-container">
     <h1 className="user-title">{user.name}</h1>
     <div className="horizontal-layout">
-      <div className="user-info">
+      <div className={`user-info ${theme.theme}`}>
         <h2>User Info</h2>
         <p><strong>ID:</strong> {user.id}</p>
         <p><strong>Username:</strong> {user.username}</p>
@@ -44,7 +47,7 @@ const UserDetails = () => {
         <p><strong>Website:</strong> <a href={`https://${user.website}`} target="_blank" rel="noopener noreferrer">{user.website}</a></p>
       </div>
 
-      <div className="address-info">
+      <div className={`address-info ${theme.theme}`}>
         <h2>Address</h2>
         <p><strong>Street:</strong> {user.address.street}</p>
         <p><strong>Suite:</strong> {user.address.suite}</p>
@@ -52,13 +55,13 @@ const UserDetails = () => {
         <p><strong>Zipcode:</strong> {user.address.zipcode}</p>
       </div>
 
-      <div className="geo-info">
+      <div className={`geo-info ${theme.theme}`}>
         <h2>Geolocation</h2>
         <p><strong>Latitude:</strong> {user.address.geo.lat}</p>
         <p><strong>Longitude:</strong> {user.address.geo.lng}</p>
       </div>
 
-      <div className="company-info">
+      <div className={`company-info ${theme.theme}`}>
         <h2>Company</h2>
         <p><strong>Name:</strong> {user.company.name}</p>
         <p><strong>Catch Phrase:</strong> {user.company.catchPhrase}</p>

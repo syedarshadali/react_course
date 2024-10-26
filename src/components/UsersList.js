@@ -42,7 +42,9 @@ const UsersList = () => {
           ))
         }
       </tbody>
-    </table>   
+    </table>
+
+    <Outlet />
 
   </div>
   )

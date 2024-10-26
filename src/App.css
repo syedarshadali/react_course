@@ -10,13 +10,19 @@ body
   box-sizing: border-box;
 }
 
-/* Styles for the body */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4; /* Light background for contrast */
+/****************** Theme light / dark ********************************/
+
+.app.light {
+  background-color: rgb(227, 220, 220);
+  color: black;
 }
 
-/* Navigation styles */
+.app.dark {
+  background-color: black;
+  color: white;
+}
+
+/***************************  Navigation styles*************************/
 nav {
   background-color: #d6a110; /* Green background */
   padding: 10px 20px; /* Padding around the nav */

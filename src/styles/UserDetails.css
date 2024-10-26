@@ -1,5 +1,16 @@
-.user-details-container {
+/* .user-details-container {
   padding: 20px;
+  background-color: #b72c2c;
+} */
+
+.user-details-container .light{
+  padding: 20px;
+  background-color: rgb(227, 220, 220);
+}
+
+.user-details-container .dark{
+  padding: 20px;
+  background-color: black;
 }
 
 .user-title {
@@ -18,7 +29,9 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
+  background-color: black;
+  margin-bottom: 20px;
 }
 
 .user-info h2, .address-info h2, .geo-info h2, .company-info h2 {
